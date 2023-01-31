@@ -23,10 +23,31 @@ module.exports = {
         test: /\.scss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.html$/i,
+        use: [
+          {
+            loader: "html-loader",
+          }
+        ]
+      },
     ],
   },
   plugins: [
     new HTMLWebpackPlugin({
+      inject: "body",
       hash: true,
       template: "./src/index.html",
       minify: {

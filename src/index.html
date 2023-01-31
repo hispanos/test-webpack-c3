@@ -7,17 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hola mundo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam error quam fuga reiciendis incidunt nisi sapiente vitae suscipit id, ad nulla officiis. Officia quasi laboriosam itaque aperiam officiis repellat?</p>
-
-    <form id="myForm">
-        <label>
-            Nombre
-            <input type="text">
-        </label>
-        <button type="submit">Guardar</button>
-    </form>
-
-    <small>Hola</small>
+    <header>
+        <figure class="figureLogo"><img alt="Logo" id="logoImage"></figure>
+        <nav>
+            <span class="menu__item-active">Todas</span>
+            <span class="menu__item">Más valoradas</span>
+            <span class="menu__item">Menos valoradas</span>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Busca tu película favorita" class="search__input">
+            <button class="search__button"><img src="./assets/images/search.png" id="searchImage" alt="Buscar" ></button>
+        </div>
+    </header>
+    <main>
+        <h2>Todas las películas</h2>
+        <section id="container__movies">
+            <article class="movie">
+                <div class="movie__rated"><img alt="Estrella" class="starImg"><span>7.1</span></div>
+                <figure class="movie__figure"><img src="https://image.tmdb.org/t/p/original/ogSpQMynabVu91Bi7AuUA8tshfb.jpg" alt="Gato con botas" class="movie__image"></figure>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
