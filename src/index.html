@@ -9,14 +9,14 @@
 <body>
     <header>
         <figure class="figureLogo"><img alt="Logo" id="logoImage"></figure>
-        <nav>
-            <span class="menu__item-active">Todas</span>
-            <span class="menu__item">Más valoradas</span>
-            <span class="menu__item">Menos valoradas</span>
+        <nav id="navHeader">
+            <span class="menu__item menu__item-active" id="menuAll">Todas</span>
+            <span class="menu__item" id="menuRated">Más valoradas</span>
+            <span class="menu__item" id="menuRecent">En Cartelera</span>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Busca tu película favorita" class="search__input">
-            <button class="search__button"><img src="./assets/images/search.png" id="searchImage" alt="Buscar" ></button>
+            <input type="text" placeholder="Busca tu película favorita" class="search__input" id="inputSearch">
+            <button class="search__button" id="buttonSearch"><img src="./assets/images/search.png" id="searchImage" alt="Buscar" ></button>
         </div>
     </header>
     <main>
@@ -30,5 +30,11 @@
             <button class="paginator__button" id="paginator__next">Siguiente</button>
         </section>
     </main>
+
+    <aside id="modal__container" class="hidden">
+        <article id="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur nemo aut reprehenderit culpa nesciunt quas debitis eum. Esse ipsum eum aliquam nulla, eius omnis? Saepe cumque nam ab nobis.</p>
+        </article>
+    </aside>
 </body>
 </html>
